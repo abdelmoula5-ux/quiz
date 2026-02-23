@@ -1,0 +1,14 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+</head>
+<body>
+    <h1>Quiz Results</h1>
+    <% results.forEach(r => { %>
+        <p>Question ID: <%= r.QuestionId %> | Answer: <%= r.Answer %> | Votes: <%= r.Total %></p>
+    <% }) %>
+    <a href="/">Back</a>
+</body>
+</html>
